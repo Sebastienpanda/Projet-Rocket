@@ -34,11 +34,13 @@ Chaque apprenant crée un dossier dans `page/` portant le nom de son animal, con
 
 ### 1. Récupérer le projet (une seule fois)
 
+Cloner le dépôt sur ta machine :
+
 ```bash
 git clone https://github.com/mickael-dvlp/Projet-Rocket.git
 ```
 
-### 2. Avant chaque session de travail
+### 2. Mettre à jour avant chaque session
 
 Toujours récupérer les dernières modifications avant de commencer :
 
@@ -46,13 +48,41 @@ Toujours récupérer les dernières modifications avant de commencer :
 git pull
 ```
 
-### 3. Pousser ses modifications
+### 3. Créer sa branche
 
-Une fois ton travail terminé :
+Chaque apprenant travaille sur sa propre branche, nommée avec le nom de son animal :
+
+```bash
+git branch <nom-de-ton-animal>
+```
+
+### 4. Se positionner sur sa branche
+
+```bash
+git checkout <nom-de-ton-animal>
+```
+
+### 5. Ajouter ses fichiers modifiés
+
+Une fois ton travail terminé, préparer les fichiers à envoyer :
 
 ```bash
 git add .
+```
+
+### 6. Enregistrer ses modifications
+
+Créer un commit avec un message descriptif :
+
+```bash
 git commit -m "ajout page <nom-de-ton-animal>"
+```
+
+### 7. Pousser ses modifications
+
+Envoyer son travail sur GitHub :
+
+```bash
 git push
 ```
 
