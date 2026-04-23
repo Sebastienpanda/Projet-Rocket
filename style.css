@@ -1,7 +1,7 @@
 @import url("page/jaguar/jaguar.css");
 
 /* ================================================
-   BASE
+   BASE pour réinitialiser les styles par défaut du navigateur
 ================================================ */
 
 * {
@@ -35,7 +35,10 @@ a {
   align-items: center;
   padding: 22px 36px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent);
-  transition: padding 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    padding 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .navbar.scrolled {
@@ -55,7 +58,9 @@ a {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  transition: width 0.35s ease, height 0.35s ease;
+  transition:
+    width 0.35s ease,
+    height 0.35s ease;
 }
 
 .navbar.scrolled .logo {
@@ -211,7 +216,9 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -232,8 +239,8 @@ a {
   background-color: #2a4d35;
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(255,255,255,0.03) 0px,
-    rgba(255,255,255,0.03) 2px,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 2px,
     transparent 2px,
     transparent 10px
   );
